@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "backend dependency for the template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "babel src --out-dir build",
+    "dev": "nodemon -e js -w src --exec \"npm run build && npm start\""
+  },
+  "author": "github.com/rdev32",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.1.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "nodemon": "^2.0.15"
+  }
+}
